@@ -4,15 +4,15 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    // remotePatterns: [
-    //   {
-    //     protocol: "https",
-    //     hostname: "raw.githubusercontent.com",
-    //     port: "",
-    //     pathname: "/jhonathanalencar/test-blogposts/main/images/**",
-    //   },
-    // ],
-    domains: ["raw.githubusercontent.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "raw.githubusercontent.com",
+        port: "",
+        pathname: "/jhonathanalencar/test-blogposts/main/images/**",
+      },
+    ],
+    // domains: ["raw.githubusercontent.com"],
   },
 };
 
