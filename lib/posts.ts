@@ -17,7 +17,7 @@ export async function getPostByName(
   fileName: string
 ): Promise<BlogPost | undefined> {
   const res = await fetch(
-    `https://raw.githubusercontent.com/jhonathanalencar/test-blogposts/main/${fileName}`,
+    `https://raw.githubusercontent.com/jhonathanalencar/blogposts/main/${fileName}`,
     {
       headers: {
         Accept: "application/vnd.github+json",
@@ -77,7 +77,7 @@ export async function getPostByName(
 
 export async function getPostsMeta(): Promise<Meta[] | undefined> {
   const res = await fetch(
-    "https://api.github.com/repos/jhonathanalencar/test-blogposts/git/trees/main?recursive=1",
+    "https://api.github.com/repos/jhonathanalencar/blogposts/git/trees/main?recursive=1",
     {
       headers: {
         Accept: "application/vnd.github+json",
